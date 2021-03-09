@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.car {
+    width: 55px !important;
+    height: 100px !important;
+    background: transparent;
+    position: absolute;
+   background-image: url("../img/e.png");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+    bottom: 120px;
+}
+.enemy{
+    width: 47px !important;
+    height: 100px !important;
+    background: transparent;
+    position: absolute;
+   background-image: url("../img/a.png");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+    bottom: 120px;
+}
+
+.gameArea{
+    width: 400px !important;
+    height: 100vh;
+    background: #2d3436;
+    margin: auto;
+    position: relative;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+.lines{
+    width: 10px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-left: 195px;
+}
+.score{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: rgb(104, 8, 56);
+    width: 300px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: fantasy;
+    box-shadow: 0 5px 5px #777;
+}
+.startscreen{
+    position: absolute;
+    background-color: tomato;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    margin: auto;
+    color: #fff;
+    font-family: cursive;
+    width: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    /* word-spacing: 30px; */
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px rgb(77, 77, 77);
+    letter-spacing: 5;
+}
+.carGame{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+@media screen and (max-width:768px){
+   .gameArea{
+       width: 18rem !important;
+       
+   } 
+   .score{
+   
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+.startscreen{
+    width: 80%;
+}
+.lines{
+   
+    margin-left: 50%;
+}
+}
+
+@media screen and (max-width:768px){
+   .gameArea{
+       width: 18rem;
+       margin:auto ;
+   } 
+   .score{
+   
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+.startscreen{
+    width: 80%;
+}
+.lines{
+   
+    margin-left: 50%;
+}
+.car{
+    width: 10px;
+    height: 70px;
+        }
+        .enemy{
+            width:10px;
+            height: 150px;   
+        }
+}
+@media screen and (min-width:768px),(max-width:1024px){
+    .gameArea{
+        width: 50%;
+        margin:auto ;
+    } 
+    .car{
+        width: 65px;
+        height: 100px;
+            }
+            .enemy{
+                width: 55px;
+                height: 100px;   
+            } 
+}
